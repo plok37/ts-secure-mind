@@ -6,19 +6,41 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "anvil": "anvil --load-state anvil-state.json --block-base-fee-per-gas 0",
+    "reset-indexer": "cd marketplaceIndexer && docker-compose down && docker volume rm marketplaceindexer_postgres_data",
+    "indexer": "cd marketplaceIndexer && rindexer start all"
   },
   "dependencies": {
+    "@radix-ui/react-slot": "^1.2.3",
+    "@radix-ui/react-tabs": "^1.1.12",
+    "@radix-ui/react-toast": "^1.2.14",
+    "@rainbow-me/rainbowkit": "^2.2.4",
+    "@shikijs/transformers": "^3.4.2",
+    "@tanstack/react-query": "^5.75.2",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.510.0",
+    "motion": "^12.12.2",
+    "next": "15.3.1",
+    "next-themes": "^0.4.6",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "next": "15.3.1"
+    "react-icons": "^5.5.0",
+    "shiki": "^3.4.2",
+    "tailwind-merge": "^3.3.0",
+    "viem": "~2.28.3",
+    "wagmi": "^2.15.2"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "@tailwindcss/postcss": "^4",
-    "tailwindcss": "^4"
+    "daisyui": "^5.0.35",
+    "prettier": "3.5.3",
+    "tailwindcss": "^4",
+    "tw-animate-css": "^1.2.9",
+    "typescript": "^5"
   }
 }
