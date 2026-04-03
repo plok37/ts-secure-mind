@@ -127,16 +127,6 @@ cd challenge
 
 ```
 ts-secure-mind-ui/
-├── foundry/                      # Smart contracts
-│   ├── src/
-│   │   ├── SecureMindRobot.sol  # ERC721A NFT contract
-│   │   ├── NftMarketplace.sol   # Marketplace logic
-│   │   ├── SecureMindToken.sol  # Platform token
-│   │   └── RobotRenderer.sol    # On-chain NFT rendering
-│   ├── script/
-│   │   └── DeployAll.s.sol      # Deployment scripts
-│   └── test/                    # Foundry test suite
-│
 ├── src/
 │   ├── app/
 │   │   ├── challenges/          # Challenge pages
